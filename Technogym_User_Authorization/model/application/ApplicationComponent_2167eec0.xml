@@ -1,0 +1,8 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Magento User Observer"
+    id="2167eec0">
+  <properties
+      key="Wiki Link"
+      value="http://www.sun.com&#xA;"/>
+</archimate:ApplicationComponent>

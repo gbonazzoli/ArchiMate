@@ -1,0 +1,12 @@
+<archimate:ServingRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Userid Created Notification"
+    id="c12d81a4">
+  <source
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_38ed1626.xml#38ed1626"/>
+  <target
+      xsi:type="archimate:ApplicationInteraction"
+      href="ApplicationInteraction_228a29e4.xml#228a29e4"/>
+</archimate:ServingRelationship>

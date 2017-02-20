@@ -1,0 +1,12 @@
+<archimate:AssignmentRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Personal Data And Email"
+    id="34f24c06">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_5f5c33da.xml#5f5c33da"/>
+  <target
+      xsi:type="archimate:BusinessProcess"
+      href="BusinessProcess_cc48fde4.xml#cc48fde4"/>
+</archimate:AssignmentRelationship>

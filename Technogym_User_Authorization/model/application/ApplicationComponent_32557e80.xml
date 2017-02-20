@@ -1,0 +1,9 @@
+<archimate:ApplicationComponent
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Magento User Registration Form"
+    id="32557e80"
+    documentation="&#xA;&#xA;&#xA;">
+  <properties
+      key="Wiki Link"
+      value="http://www.kernel.org&#xA;"/>
+</archimate:ApplicationComponent>

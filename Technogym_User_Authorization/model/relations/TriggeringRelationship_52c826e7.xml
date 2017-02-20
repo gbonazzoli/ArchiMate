@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Submit Person / Organization / Authorization"
+    id="52c826e7">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_f0c23293.xml#f0c23293"/>
+  <target
+      xsi:type="archimate:ApplicationInteraction"
+      href="ApplicationInteraction_f9d86733.xml#f9d86733"/>
+</archimate:TriggeringRelationship>

@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Web Site Registration's Notification"
+    id="983b31bc">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_5f5c33da.xml#5f5c33da"/>
+  <target
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_56f7994e.xml#56f7994e"/>
+</archimate:TriggeringRelationship>

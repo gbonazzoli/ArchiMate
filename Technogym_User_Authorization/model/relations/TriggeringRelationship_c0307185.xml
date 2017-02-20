@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="SAP User Profile Request"
+    id="c0307185">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_f0c23293.xml#f0c23293"/>
+  <target
+      xsi:type="archimate:ApplicationInteraction"
+      href="ApplicationInteraction_8ae25e6e.xml#8ae25e6e"/>
+</archimate:TriggeringRelationship>

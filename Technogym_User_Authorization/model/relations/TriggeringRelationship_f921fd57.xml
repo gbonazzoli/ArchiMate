@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Submit Personal Data"
+    id="f921fd57">
+  <source
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_5f5c33da.xml#5f5c33da"/>
+  <target
+      xsi:type="archimate:ApplicationInteraction"
+      href="ApplicationInteraction_411100f5-01a3-4eab-a1c1-316208d83395.xml#411100f5-01a3-4eab-a1c1-316208d83395"/>
+</archimate:TriggeringRelationship>

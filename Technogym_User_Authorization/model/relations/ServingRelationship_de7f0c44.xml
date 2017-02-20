@@ -1,0 +1,12 @@
+<archimate:ServingRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="User Authorization Request Notification"
+    id="de7f0c44">
+  <source
+      xsi:type="archimate:ApplicationInteraction"
+      href="ApplicationInteraction_ae23f988.xml#ae23f988"/>
+  <target
+      xsi:type="archimate:BusinessActor"
+      href="BusinessActor_f0c23293.xml#f0c23293"/>
+</archimate:ServingRelationship>
