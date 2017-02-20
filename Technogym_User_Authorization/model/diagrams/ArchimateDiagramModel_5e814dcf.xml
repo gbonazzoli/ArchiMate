@@ -255,11 +255,11 @@
             startX="-6"
             startY="69"
             endX="228"
-            endY="-87"/>
+            endY="-96"/>
         <bendpoints
             startX="-234"
             startY="69"
-            endY="-87"/>
+            endY="-96"/>
         <archimateRelationship
             xsi:type="archimate:ServingRelationship"
             href="ServingRelationship_aaa13134.xml#aaa13134"/>

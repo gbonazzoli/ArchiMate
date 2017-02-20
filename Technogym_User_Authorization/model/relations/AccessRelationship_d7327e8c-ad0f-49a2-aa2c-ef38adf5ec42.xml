@@ -1,0 +1,12 @@
+<archimate:AccessRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Link Alfresco Page"
+    id="d7327e8c-ad0f-49a2-aa2c-ef38adf5ec42">
+  <source
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_6a1541bd-d08f-4829-8f67-9a3ea71e815a.xml#6a1541bd-d08f-4829-8f67-9a3ea71e815a"/>
+  <target
+      xsi:type="archimate:DataObject"
+      href="DataObject_2bac613e-1b49-474b-94c4-f624cedf11e3.xml#2bac613e-1b49-474b-94c4-f624cedf11e3"/>
+</archimate:AccessRelationship>

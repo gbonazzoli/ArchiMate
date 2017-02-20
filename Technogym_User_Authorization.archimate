@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archimate:model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:archimate="http://www.archimatetool.com/archimate" xmlns:canvas="http://www.archimatetool.com/archimate/canvas" name="ExternalAccount" id="fb0c6e76" version="4.0.0">
+  <folder name="Strategy" id="25af0793-7e1d-4570-b6f6-dd6a328c28e3" type="strategy"/>
+  <folder name="Business" id="67c446b2" type="business">
+    <element xsi:type="archimate:BusinessActor" name="External Person" id="5f5c33da"/>
+    <element xsi:type="archimate:BusinessProcess" name="Technogym Web Site Registration Process" id="cc48fde4"/>
+    <element xsi:type="archimate:BusinessActor" name="Technogym IT Operator" id="f0c23293"/>
+    <element xsi:type="archimate:BusinessProcess" name="Salesforce Authorization Process" id="b5863eb2"/>
+    <element xsi:type="archimate:BusinessProcess" name="Technogym Account Creation Process" id="d4272fc6"/>
+    <element xsi:type="archimate:BusinessActor" name="External Organization" id="47060fad">
+      <property key="Wiki Link"/>
+    </element>
+    <element xsi:type="archimate:BusinessActor" name="External IT Operator" id="56f7994e"/>
+    <element xsi:type="archimate:BusinessProcess" name="Technogym Kanboard Ticket Process" id="9f087180"/>
+    <element xsi:type="archimate:BusinessActor" name="Techedge IT Operator" id="b6837617"/>
+    <element xsi:type="archimate:BusinessObject" name="Business Object" id="53e67116-2eda-4e78-9dd8-543686bb283d"/>
+  </folder>
+  <folder name="Application" id="72ad8ce9" type="application">
+    <element xsi:type="archimate:ApplicationComponent" name="Web User Registration Form" id="c0984a5e"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Magento User Registration Form" id="32557e80">
+      <documentation>
+
+
+</documentation>
+      <property key="Wiki Link" value="http://www.kernel.org&#xA;"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Magento User Observer" id="2167eec0">
+      <property key="Wiki Link" value="http://www.sun.com&#xA;"/>
+    </element>
+    <element xsi:type="archimate:ApplicationComponent" name="Old Site User Web Service" id="cc928dff"/>
+    <element xsi:type="archimate:DataObject" name="Old Website User Master Data On SQL Server" id="c893287d"/>
+    <element xsi:type="archimate:ApplicationInteraction" name="Account Creation" id="f9d86733"/>
+    <element xsi:type="archimate:ApplicationInteraction" name="Contact Creation" id="d919afe3"/>
+    <element xsi:type="archimate:ApplicationInteraction" name="TG Application Contact Creation" id="228a29e4"/>
+    <element xsi:type="archimate:DataObject" name="Technpgym Application Catalog" id="47832bda"/>
+    <element xsi:type="archimate:ApplicationInterface" name="Listen Outbound Messages" id="657625a9"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Create User On Active Directory" id="4830dbf3"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Create User On TGYM_USERS" id="cafa5ef4"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Associate User To Active Directory Group" id="5f9849b3"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Notify Salesforce With Technogym Userid" id="38ed1626"/>
+    <element xsi:type="archimate:ApplicationInteraction" name="User Authorization request" id="ae23f988"/>
+    <element xsi:type="archimate:ApplicationInteraction" name="User Created, SAP Profile Configuration Request" id="8ae25e6e"/>
+    <element xsi:type="archimate:ApplicationInteraction" name="Magento User Registration Form" id="411100f5-01a3-4eab-a1c1-316208d83395"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Application Process" id="b533af2c-dbb6-4814-a00b-f25501b3b628"/>
+    <element xsi:type="archimate:ApplicationProcess" name="Technogym Account Creation Process" id="44e69b8a-12a8-4a36-9f08-09869327b035"/>
+    <element xsi:type="archimate:DataObject" name="Technogym Application Contact" id="ae033390-dab2-44a8-b867-6edcc607521c"/>
+  </folder>
+  <folder name="Technology &amp; Physical" id="c215455e" type="technology"/>
+  <folder name="Motivation" id="536312a2" type="motivation"/>
+  <folder name="Implementation &amp; Migration" id="51f1eb36" type="implementation_migration"/>
+  <folder name="Other" id="5aaf8170-dde4-483b-a3b2-88b55b95aed6" type="other">
+    <element xsi:type="archimate:Junction" name="Junction" id="864b5845-0d5e-45b1-8d38-b7f05c907656" type="or"/>
+  </folder>
+  <folder name="Relations" id="5351843a" type="relations">
+    <element xsi:type="archimate:TriggeringRelationship" id="491dcbd2" source="5f5c33da" target="c0984a5e"/>
+    <element xsi:type="archimate:AssignmentRelationship" name="Personal Data And Email" id="34f24c06" source="5f5c33da" target="cc48fde4"/>
+    <element xsi:type="archimate:AssociationRelationship" id="25cf390a" source="f9d86733" target="d919afe3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a29bde50" source="d919afe3" target="228a29e4"/>
+    <element xsi:type="archimate:AssociationRelationship" id="cc0b1595" source="47832bda" target="228a29e4"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Submit Person / Organization / Authorization" id="52c826e7" source="f0c23293" target="f9d86733"/>
+    <element xsi:type="archimate:ServingRelationship" name="Outbound Message" id="aaa13134" source="228a29e4" target="657625a9"/>
+    <element xsi:type="archimate:AssociationRelationship" id="99327385" source="c893287d" target="4830dbf3"/>
+    <element xsi:type="archimate:ServingRelationship" id="b760236c" source="47060fad" target="5f5c33da"/>
+    <element xsi:type="archimate:ServingRelationship" id="762f5320" source="657625a9" target="4830dbf3"/>
+    <element xsi:type="archimate:ServingRelationship" id="0f96437c" source="4830dbf3" target="5f9849b3"/>
+    <element xsi:type="archimate:ServingRelationship" id="89f41424" source="5f9849b3" target="cafa5ef4"/>
+    <element xsi:type="archimate:ServingRelationship" id="761c7bd9" source="cafa5ef4" target="38ed1626"/>
+    <element xsi:type="archimate:ServingRelationship" name="Userid Created Notification" id="c12d81a4" source="38ed1626" target="228a29e4"/>
+    <element xsi:type="archimate:AssociationRelationship" id="18250f2b" source="47832bda" target="5f9849b3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="6da29f19" source="c893287d" target="4830dbf3"/>
+    <element xsi:type="archimate:AssociationRelationship" id="a28b1a9f" source="47060fad" target="f9d86733"/>
+    <element xsi:type="archimate:AssociationRelationship" id="8e23652a" source="5f5c33da" target="d919afe3"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Submit Authorization Request" id="31a24a3e" source="56f7994e" target="ae23f988"/>
+    <element xsi:type="archimate:ServingRelationship" id="13ee34fc" source="47060fad" target="56f7994e"/>
+    <element xsi:type="archimate:ServingRelationship" name="User Authorization Request Notification" id="de7f0c44" source="ae23f988" target="f0c23293"/>
+    <element xsi:type="archimate:ServingRelationship" name="User Authorization Request Notification" id="fbf677a3" source="8ae25e6e" target="b6837617"/>
+    <element xsi:type="archimate:ServingRelationship" id="d3ff7a4e" source="f0c23293" target="9f087180"/>
+    <element xsi:type="archimate:AssociationRelationship" id="31407ce2" source="8ae25e6e" target="f0c23293"/>
+    <element xsi:type="archimate:CompositionRelationship" id="ce0662b5" source="47060fad" target="5f5c33da"/>
+    <element xsi:type="archimate:CompositionRelationship" id="6eaa922a" source="47060fad" target="56f7994e"/>
+    <element xsi:type="archimate:AccessRelationship" id="53f31b7d" source="5f9849b3" target="47832bda" accessType="1"/>
+    <element xsi:type="archimate:AccessRelationship" id="7cfa34d2" source="4830dbf3" target="c893287d" accessType="1"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="SAP User Profile Request" id="c0307185" source="f0c23293" target="8ae25e6e"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Submit Personal Data" id="f921fd57" source="5f5c33da" target="411100f5-01a3-4eab-a1c1-316208d83395"/>
+    <element xsi:type="archimate:TriggeringRelationship" name="Web Site Registration's Notification" id="983b31bc" source="5f5c33da" target="56f7994e"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="bb66b99d" source="411100f5-01a3-4eab-a1c1-316208d83395" target="2167eec0"/>
+    <element xsi:type="archimate:TriggeringRelationship" id="13fee273" source="2167eec0" target="cc928dff"/>
+    <element xsi:type="archimate:AccessRelationship" id="d6ccbd37" source="cc928dff" target="c893287d"/>
+    <element xsi:type="archimate:RealizationRelationship" id="d0350ad2-01e9-4788-9ecb-8bd6f6e9ec32" source="cc48fde4" target="411100f5-01a3-4eab-a1c1-316208d83395"/>
+    <element xsi:type="archimate:AccessRelationship" id="50e51ea7-75a0-482c-b905-a8738eea9937" source="228a29e4" target="47832bda" accessType="1"/>
+    <element xsi:type="archimate:AssociationRelationship" id="9f509a71-597e-40c2-88e4-b7befbae81d4" source="53e67116-2eda-4e78-9dd8-543686bb283d" target="52c826e7"/>
+    <element xsi:type="archimate:AccessRelationship" id="f0544006-01fd-4a52-9386-f29492c858a0" source="b5863eb2" target="ae033390-dab2-44a8-b867-6edcc607521c"/>
+    <element xsi:type="archimate:AccessRelationship" name="Userid Created / Error Notification" id="f1930ee7-d215-4861-8231-03d0adad0efd" source="38ed1626" target="ae033390-dab2-44a8-b867-6edcc607521c"/>
+    <element xsi:type="archimate:AccessRelationship" id="f4cd72a5-c708-4757-a27a-5f781fe065e8" source="228a29e4" target="ae033390-dab2-44a8-b867-6edcc607521c"/>
+  </folder>
+  <folder name="Views" id="40fa47ef" type="diagrams">
+    <element xsi:type="archimate:ArchimateDiagramModel" name="User Authorization" id="5e814dcf">
+      <child xsi:type="archimate:DiagramObject" id="6db3440e" archimateElement="cc48fde4">
+        <bounds x="264" y="60" width="589" height="121"/>
+        <sourceConnection xsi:type="archimate:Connection" id="4126fe1f-3faa-4c12-9e24-9bca13c075fa" source="6db3440e" target="da2e784c-c088-414f-9fde-c08d476a7614" archimateRelationship="d0350ad2-01e9-4788-9ecb-8bd6f6e9ec32"/>
+        <child xsi:type="archimate:DiagramObject" id="0bf65730" targetConnections="117d145a" archimateElement="2167eec0">
+          <bounds x="168" y="38" width="120" height="70"/>
+          <sourceConnection xsi:type="archimate:Connection" id="9567eaa9" source="0bf65730" target="f4f3a2e9" archimateRelationship="13fee273"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="f4f3a2e9" targetConnections="9567eaa9" archimateElement="cc928dff">
+          <bounds x="312" y="38" width="120" height="70"/>
+          <sourceConnection xsi:type="archimate:Connection" id="a0a30f12" source="f4f3a2e9" target="ac1a21db" archimateRelationship="d6ccbd37"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="ac1a21db" targetConnections="a0a30f12 6d76b289-9afb-479c-8ddc-37e443efdb3a" archimateElement="c893287d">
+          <bounds x="456" y="23" width="120" height="85"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="da2e784c-c088-414f-9fde-c08d476a7614" targetConnections="4126fe1f-3faa-4c12-9e24-9bca13c075fa 0af80b6e" archimateElement="411100f5-01a3-4eab-a1c1-316208d83395">
+          <bounds x="24" y="37" width="120" height="72"/>
+          <sourceConnection xsi:type="archimate:Connection" id="117d145a" source="da2e784c-c088-414f-9fde-c08d476a7614" target="0bf65730" archimateRelationship="bb66b99d"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="879a458c" targetConnections="07df9afb" archimateElement="f0c23293">
+        <bounds x="5" y="420" width="133" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="1794b61d" source="879a458c" target="77b85fe3" archimateRelationship="c0307185">
+          <bendpoint startX="25" startY="-75" endX="-570" endY="81"/>
+          <bendpoint startX="541" startY="-75" endX="-6" endY="81"/>
+        </sourceConnection>
+        <sourceConnection xsi:type="archimate:Connection" id="b4d8fc8e" source="879a458c" target="76a8af79" archimateRelationship="52c826e7"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="8e4c1d47" archimateElement="b5863eb2">
+        <bounds x="480" y="396" width="649" height="181"/>
+        <sourceConnection xsi:type="archimate:Connection" id="1f84bcb7-ac90-49a4-97db-d572571d6b3c" source="8e4c1d47" target="bdde5990-b4c5-43a0-a0ea-f0e3be703cc3" archimateRelationship="f0544006-01fd-4a52-9386-f29492c858a0"/>
+        <child xsi:type="archimate:DiagramObject" id="76a8af79" targetConnections="b4d8fc8e" archimateElement="f9d86733">
+          <bounds x="12" y="30" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="04d41889" source="76a8af79" target="c7406d59" archimateRelationship="25cf390a">
+            <bendpoint startY="51" endX="-144" endY="9"/>
+            <bendpoint startX="48" startY="51" endX="-96" endY="9"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="c7406d59" targetConnections="04d41889" archimateElement="d919afe3">
+          <bounds x="144" y="72" width="120" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="1087dc23" source="c7406d59" target="d3c07e78" archimateRelationship="a29bde50">
+            <bendpoint startY="45" endX="-162" endY="9"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d3c07e78" targetConnections="1087dc23" archimateElement="228a29e4">
+          <bounds x="276" y="108" width="157" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="b90c0f74-37b0-49c2-90e2-9e653fffd274" source="d3c07e78" target="6510789e" archimateRelationship="50e51ea7-75a0-482c-b905-a8738eea9937">
+            <bendpoint startX="-6" startY="-75" endX="-156" endY="3"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="5d69775a-e59f-44bc-9cc5-30e446219984" source="d3c07e78" target="bdde5990-b4c5-43a0-a0ea-f0e3be703cc3" archimateRelationship="f4cd72a5-c708-4757-a27a-5f781fe065e8"/>
+          <sourceConnection xsi:type="archimate:Connection" id="39110924" source="d3c07e78" target="9db65aa1" archimateRelationship="aaa13134">
+            <bendpoint startX="-6" startY="69" endX="228" endY="-87"/>
+            <bendpoint startX="-234" startY="69" endY="-87"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="6510789e" targetConnections="b90c0f74-37b0-49c2-90e2-9e653fffd274 ef036a1d" archimateElement="47832bda">
+          <bounds x="492" y="30" width="145" height="55"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="bdde5990-b4c5-43a0-a0ea-f0e3be703cc3" targetConnections="1f84bcb7-ac90-49a4-97db-d572571d6b3c 84879064-de17-4da9-88be-7445e338311c 5d69775a-e59f-44bc-9cc5-30e446219984" archimateElement="ae033390-dab2-44a8-b867-6edcc607521c">
+          <bounds x="492" y="108" width="145" height="55"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="cd873628" archimateElement="47060fad">
+        <bounds x="-12" y="60" width="168" height="241"/>
+        <child xsi:type="archimate:DiagramObject" id="cccc7f92" archimateElement="5f5c33da">
+          <bounds x="12" y="36" width="145" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="504d5cad" source="cccc7f92" target="cc1f3d60" archimateRelationship="983b31bc"/>
+          <sourceConnection xsi:type="archimate:Connection" id="0af80b6e" source="cccc7f92" target="da2e784c-c088-414f-9fde-c08d476a7614" archimateRelationship="f921fd57"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="cc1f3d60" targetConnections="504d5cad" archimateElement="56f7994e">
+          <bounds x="12" y="180" width="145" height="55"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f433ca57" source="cc1f3d60" target="8fb76193" archimateRelationship="31a24a3e"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="6a083937" archimateElement="9f087180">
+        <bounds x="360" y="213" width="349" height="136"/>
+        <child xsi:type="archimate:DiagramObject" id="8fb76193" targetConnections="f433ca57" archimateElement="ae23f988">
+          <bounds x="36" y="36" width="120" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="07df9afb" source="8fb76193" target="879a458c" archimateRelationship="de7f0c44">
+            <bendpoint startX="-396" startY="21" endX="-11" endY="-135"/>
+          </sourceConnection>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="77b85fe3" targetConnections="1794b61d" archimateElement="8ae25e6e">
+          <bounds x="192" y="36" width="133" height="85"/>
+          <sourceConnection xsi:type="archimate:Connection" id="7d40d2fd" textPosition="2" source="77b85fe3" target="a98f1c68" archimateRelationship="fbf677a3"/>
+        </child>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="a98f1c68" targetConnections="7d40d2fd" archimateElement="b6837617">
+        <bounds x="972" y="276" width="144" height="55"/>
+      </child>
+      <child xsi:type="archimate:Note" id="0fb342e9" textAlignment="1">
+        <bounds x="864" width="469" height="214"/>
+        <content>Lo Use Case è Il seguente:
+
+Giuseppe Pinto (External IT Operator) inserisce una Authorization Request Sul Kanboard, dopo essere stato notificato da un suo collega dell'avvenuta registrazione sul Technogym Web Site.
+
+Il Ticket Inserito notifica via mail un Technogym IT Operator che provvede ad aprire su Salesforce le strutture dati per descrivere &quot;chi&quot; ed &quot;a che cosa&quot; abilitare la &quot;External Person&quot;.
+
+Salesforce via Outbound message ingaggia un processo automatico di creazione e profilazione utente su Active Directory che alla fine produce lo userid erp_xxxxx che serve a Techedge per aprire e profilare l'utente su SAP</content>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="2adc72b6-2d6b-456c-8651-e47b0199e648" model="7058b32e">
+        <bounds x="-12" width="865" height="49"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="9a038e0d-e5e8-4887-af5b-3157865c9b62" archimateElement="44e69b8a-12a8-4a36-9f08-09869327b035">
+        <bounds x="528" y="624" width="781" height="133"/>
+        <child xsi:type="archimate:DiagramObject" id="9db65aa1" targetConnections="39110924" archimateElement="657625a9">
+          <bounds x="12" y="24" width="120" height="97"/>
+          <sourceConnection xsi:type="archimate:Connection" id="d0ff3d0a" source="9db65aa1" target="66a41e53" archimateRelationship="762f5320"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="66a41e53" targetConnections="d0ff3d0a" archimateElement="4830dbf3">
+          <bounds x="168" y="26" width="120" height="95"/>
+          <sourceConnection xsi:type="archimate:Connection" id="4e9b06fd" source="66a41e53" target="d9bb39f7" archimateRelationship="0f96437c"/>
+          <sourceConnection xsi:type="archimate:Connection" id="6d76b289-9afb-479c-8ddc-37e443efdb3a" source="66a41e53" target="ac1a21db" archimateRelationship="7cfa34d2"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="d9bb39f7" targetConnections="4e9b06fd" archimateElement="5f9849b3">
+          <bounds x="324" y="26" width="120" height="95"/>
+          <sourceConnection xsi:type="archimate:Connection" id="ef036a1d" source="d9bb39f7" target="6510789e" archimateRelationship="53f31b7d">
+            <bendpoint startX="11" startY="-285" endX="-120" endY="15"/>
+          </sourceConnection>
+          <sourceConnection xsi:type="archimate:Connection" id="762689e1" source="d9bb39f7" target="71281f55" archimateRelationship="89f41424"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="71281f55" targetConnections="762689e1" archimateElement="cafa5ef4">
+          <bounds x="480" y="26" width="121" height="95"/>
+          <sourceConnection xsi:type="archimate:Connection" id="f3e8e29b" source="71281f55" target="b7a7a89a" archimateRelationship="761c7bd9"/>
+        </child>
+        <child xsi:type="archimate:DiagramObject" id="b7a7a89a" targetConnections="f3e8e29b" archimateElement="38ed1626">
+          <bounds x="636" y="21" width="120" height="100"/>
+          <sourceConnection xsi:type="archimate:Connection" id="84879064-de17-4da9-88be-7445e338311c" source="b7a7a89a" target="bdde5990-b4c5-43a0-a0ea-f0e3be703cc3" archimateRelationship="f1930ee7-d215-4861-8231-03d0adad0efd">
+            <bendpoint startY="-214" endX="168" endY="9"/>
+          </sourceConnection>
+        </child>
+      </child>
+    </element>
+    <element xsi:type="canvas:CanvasModel" name="Main Menu" id="7058b32e">
+      <child xsi:type="archimate:DiagramModelReference" id="bc4b9ff7" model="5e814dcf">
+        <bounds x="120" y="84" width="325" height="73"/>
+      </child>
+      <child xsi:type="archimate:DiagramModelReference" id="1edd7475-e18a-4114-85a0-be463efd1d5a" model="8f805532-fe5d-47c1-9d49-8944f4a485b7">
+        <bounds x="468" y="84" width="337" height="73"/>
+      </child>
+    </element>
+    <element xsi:type="archimate:ArchimateDiagramModel" name="Bern Process" id="8f805532-fe5d-47c1-9d49-8944f4a485b7">
+      <child xsi:type="archimate:DiagramObject" id="c48aad96-c623-4248-bddf-5a4264760283" targetConnections="fe4e879e-cd29-4b92-be9f-2a5d145c1f18" archimateElement="56f7994e">
+        <bounds x="24" y="96" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="ad438dc1-78d2-4502-a571-3cd1687d48e8" source="c48aad96-c623-4248-bddf-5a4264760283" target="c81a2093-5719-4088-b485-3bdd34734b17" archimateRelationship="31a24a3e"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="77811936-37aa-4b4d-bdf2-eafc84ae1f38" targetConnections="a09b3232-07da-4552-8fff-22a5a4e6baaa" archimateElement="b6837617">
+        <bounds x="36" y="216" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="c81a2093-5719-4088-b485-3bdd34734b17" targetConnections="ad438dc1-78d2-4502-a571-3cd1687d48e8" archimateElement="ae23f988">
+        <bounds x="288" y="12" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="32929723-9219-48d8-a638-4ce0e95276e0" archimateElement="47060fad">
+        <bounds x="551" y="84" width="120" height="55"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="67c28cab-26de-4f67-9945-e7cd67c9212c" archimateElement="5f5c33da">
+        <bounds x="432" y="192" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="fe4e879e-cd29-4b92-be9f-2a5d145c1f18" source="67c28cab-26de-4f67-9945-e7cd67c9212c" target="c48aad96-c623-4248-bddf-5a4264760283" archimateRelationship="983b31bc"/>
+      </child>
+      <child xsi:type="archimate:DiagramObject" id="64e96845-3e75-4d2a-bd7b-750c3c34c900" archimateElement="8ae25e6e">
+        <bounds x="348" y="444" width="120" height="55"/>
+        <sourceConnection xsi:type="archimate:Connection" id="a09b3232-07da-4552-8fff-22a5a4e6baaa" source="64e96845-3e75-4d2a-bd7b-750c3c34c900" target="77811936-37aa-4b4d-bdf2-eafc84ae1f38" archimateRelationship="fbf677a3"/>
+      </child>
+    </element>
+  </folder>
+  <purpose>Descrizione del processo di apertura di un utente esterno sui sistemi technogym
+
+http://www.kernel.org
+
+</purpose>
+</archimate:model>

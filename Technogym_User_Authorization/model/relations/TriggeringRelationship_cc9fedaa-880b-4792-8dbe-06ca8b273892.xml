@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Update Application Interface"
+    id="cc9fedaa-880b-4792-8dbe-06ca8b273892">
+  <source
+      xsi:type="archimate:Junction"
+      href="Junction_f0d90672-a671-4c78-9fb0-aa99fb87ff71.xml#f0d90672-a671-4c78-9fb0-aa99fb87ff71"/>
+  <target
+      xsi:type="archimate:ApplicationInterface"
+      href="ApplicationInterface_707b3f3e-52d1-45ea-a26b-13dbdbf13573.xml#707b3f3e-52d1-45ea-a26b-13dbdbf13573"/>
+</archimate:TriggeringRelationship>

@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Update Archimate"
+    id="8b4a97bb-44e9-4a18-a5e6-39b870ddeb57">
+  <source
+      xsi:type="archimate:Junction"
+      href="Junction_e3d621d6-6640-410d-8a56-6adf7ecf0abc.xml#e3d621d6-6640-410d-8a56-6adf7ecf0abc"/>
+  <target
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_6a1541bd-d08f-4829-8f67-9a3ea71e815a.xml#6a1541bd-d08f-4829-8f67-9a3ea71e815a"/>
+</archimate:TriggeringRelationship>

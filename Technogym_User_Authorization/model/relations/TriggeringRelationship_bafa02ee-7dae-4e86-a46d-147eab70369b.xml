@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Update Application Function"
+    id="bafa02ee-7dae-4e86-a46d-147eab70369b">
+  <source
+      xsi:type="archimate:Junction"
+      href="Junction_f0d90672-a671-4c78-9fb0-aa99fb87ff71.xml#f0d90672-a671-4c78-9fb0-aa99fb87ff71"/>
+  <target
+      xsi:type="archimate:ApplicationFunction"
+      href="ApplicationFunction_555675b0-32c4-40cd-9785-8d75f41fc403.xml#555675b0-32c4-40cd-9785-8d75f41fc403"/>
+</archimate:TriggeringRelationship>

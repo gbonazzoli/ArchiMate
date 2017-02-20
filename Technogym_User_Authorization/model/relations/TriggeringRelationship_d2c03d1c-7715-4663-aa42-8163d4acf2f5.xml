@@ -1,0 +1,12 @@
+<archimate:TriggeringRelationship
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:archimate="http://www.archimatetool.com/archimate"
+    name="Update Wiki"
+    id="d2c03d1c-7715-4663-aa42-8163d4acf2f5">
+  <source
+      xsi:type="archimate:Junction"
+      href="Junction_e3d621d6-6640-410d-8a56-6adf7ecf0abc.xml#e3d621d6-6640-410d-8a56-6adf7ecf0abc"/>
+  <target
+      xsi:type="archimate:ApplicationComponent"
+      href="ApplicationComponent_e2702f46-5a33-42e9-8ce9-2ce91dcb689d.xml#e2702f46-5a33-42e9-8ce9-2ce91dcb689d"/>
+</archimate:TriggeringRelationship>
