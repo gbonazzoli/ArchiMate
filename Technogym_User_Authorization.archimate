@@ -35,7 +35,7 @@
     <element xsi:type="archimate:DataObject" name="Technpgym Application Catalog" id="47832bda"/>
     <element xsi:type="archimate:ApplicationInterface" name="Listen Outbound Messages" id="657625a9"/>
     <element xsi:type="archimate:ApplicationComponent" name="Create User On Active Directory" id="4830dbf3"/>
-    <element xsi:type="archimate:ApplicationComponent" name="Create User On TGYM_USERS" id="cafa5ef4"/>
+    <element xsi:type="archimate:ApplicationComponent" name="Create User On tgym_users" id="cafa5ef4"/>
     <element xsi:type="archimate:ApplicationComponent" name="Associate User To Active Directory Group" id="5f9849b3"/>
     <element xsi:type="archimate:ApplicationComponent" name="Notify Salesforce With Technogym Userid" id="38ed1626"/>
     <element xsi:type="archimate:ApplicationInteraction" name="User Authorization request" id="ae23f988"/>
